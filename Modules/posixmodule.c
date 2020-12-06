@@ -16,6 +16,11 @@
     * OSX 10.4 and later, see the comment in the #ifdef __APPLE__ block
     * at the end of this file for more information.
     */
+
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <sys/uio.h>
+
 #  pragma weak lchown
 #  pragma weak statvfs
 #  pragma weak fstatvfs
